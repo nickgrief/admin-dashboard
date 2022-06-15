@@ -1,0 +1,49 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 6fr;
+  grid-template-areas: "sidebar header" "sidebar main";
+}
+
+.header {
+  grid-area: header;
+  background-color: aquamarine;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: darkslateblue;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sidebar p {
+  color: white;
+}
+
+.sidebar img {
+  filter: invert(100%);
+}
+
+.sidebar-banner {
+  display: flex;
+  gap: 12px;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-item {
+  display: flex;
+  gap: 12px;
+}
+
+.main {
+  grid-area: main;
+  background-color: deepskyblue;
+}
