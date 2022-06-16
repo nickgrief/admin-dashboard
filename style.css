@@ -1,3 +1,10 @@
+body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans",
+    "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -7,12 +14,78 @@
 
 .header {
   grid-area: header;
-  background-color: aquamarine;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 8px 32px;
+  gap: 12px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 12px;
+  margin-right: 64px;
+}
+
+.search-bar {
+  flex: 1;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(207, 230, 244);
+  padding: 2px 12px;
+}
+
+.profile-picture {
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  padding: 8px 32px;
+  gap: 24px;
+}
+
+.header-bottom .profile-picture {
+  height: 5rem;
+}
+
+.greeting {
+  flex: 1;
+}
+
+.greeting-start {
+  font-weight: bold;
+}
+
+.greeting-profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.new-button,
+.upload-button,
+.share-button {
+  background-color: rgb(0, 137, 216);
+  border: none;
+  color: white;
+  border-radius: 24px;
+  padding: 8px;
+  width: 100px;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background-color: darkslateblue;
+  background-color: rgb(0, 137, 216);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -29,7 +102,17 @@
 
 .sidebar-banner {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  /* gap: 3px; */
+}
+
+.banner-image {
+  height: 2rem;
+}
+
+.banner-text {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .sidebar-list {
@@ -40,7 +123,17 @@
 
 .sidebar-item {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar-icon {
+  height: 1.5rem;
+}
+
+.sidebar-text {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .main {
