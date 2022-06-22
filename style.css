@@ -43,7 +43,6 @@ body {
   height: 3rem;
   border-radius: 50%;
 }
-
 .profile-name {
   font-weight: bold;
 }
@@ -139,4 +138,9 @@ body {
 .main {
   grid-area: main;
   background-color: deepskyblue;
+  display: grid;
+  grid: 1fr 1fr / 4fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
 }
